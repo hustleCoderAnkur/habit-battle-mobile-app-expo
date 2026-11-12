@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "habit-battle",
+    "slug": "habit-battle",
+    "scheme": "habitbattle",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE"
+      },
+      "predictiveBackGestureEnabled": false,
+      "softwareKeyboardLayoutMode": "resize",
+      "package": "com.anonymous.habitbattle"
+    },
+    "web": {},
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-splash-screen",
+      "expo-secure-store",
+      "expo-notifications",
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Allow Habit Battle to access your contacts so you can find and invite friends."
+        }
+      ]
+    ]
+  }
+}

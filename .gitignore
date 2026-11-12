@@ -1,0 +1,59 @@
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Expo
+.expo/
+.expo-shared/
+web-build/
+dist/
+
+# React Native
+.metro-health-check*
+*.jsbundle
+
+# Build outputs
+build/
+coverage/
+*.tsbuildinfo
+
+# Android
+**/android/.gradle/
+**/android/app/build/
+**/android/local.properties
+
+# iOS
+**/ios/Pods/
+**/ios/build/
+*.xcworkspace/xcuserdata/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Temporary files
+*.tmp
+*.bak
+
+# Test artifacts
+playwright-report/
+test-results/
