@@ -57,3 +57,10 @@ desktop.ini
 # Test artifacts
 playwright-report/
 test-results/
+
+# Expo Continuous Native Generation
+/android/
+/ios/
+
+# Local native backup
+/android-backup/

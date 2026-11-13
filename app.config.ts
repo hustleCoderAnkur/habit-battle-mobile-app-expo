@@ -23,21 +23,29 @@ const getAppName = () => {
   }
 };
 
+
 const config: ExpoConfig = {
   name: getAppName(),
   slug: "habit-battle",
   scheme: "habitbattle",
   version: "1.0.0",
+
   updates: {
     url: "https://u.expo.dev/5ead202a-8c50-4a4d-8077-d9c04a0418c0",
   },
+
+  runtimeVersion: {
+    policy: "appVersion",
+  },
+
   orientation: "portrait",
   userInterfaceStyle: "light",
+
   ios: {
     supportsTablet: true,
     bundleIdentifier: getUniqueIdentifier(),
-    runtimeVersion: "1.0.0", 
   },
+
   android: {
     adaptiveIcon: {
       backgroundColor: "#E6F4FE",
@@ -50,13 +58,16 @@ const config: ExpoConfig = {
       "android.permission.WRITE_CONTACTS",
     ],
   },
+
   web: {},
+
   plugins: [
     "expo-router",
     "expo-status-bar",
     "expo-splash-screen",
     "expo-secure-store",
     "expo-notifications",
+    "expo-updates",
     [
       "expo-contacts",
       {
@@ -65,6 +76,7 @@ const config: ExpoConfig = {
       },
     ],
   ],
+
   extra: {
     router: {
       asyncRoutes: {
@@ -75,7 +87,9 @@ const config: ExpoConfig = {
       projectId: "5ead202a-8c50-4a4d-8077-d9c04a0418c0",
     },
   },
+
   owner: "hustler_ankur",
 };
+
 
 export default config;
