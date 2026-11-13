@@ -1,0 +1,9 @@
+﻿name: Habit Battle Development Build
+
+jobs:
+  build_android:
+    name: Build Android Development App
+    type: build
+    params:
+      platform: android
+      profile: development

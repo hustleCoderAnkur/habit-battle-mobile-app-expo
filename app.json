@@ -15,7 +15,11 @@
       },
       "predictiveBackGestureEnabled": false,
       "softwareKeyboardLayoutMode": "resize",
-      "package": "com.anonymous.habitbattle"
+      "package": "com.hustlecoder.habitbattle",
+      "permissions": [
+        "android.permission.READ_CONTACTS",
+        "android.permission.WRITE_CONTACTS"
+      ]
     },
     "web": {},
     "plugins": [
@@ -30,6 +34,17 @@
           "contactsPermission": "Allow Habit Battle to access your contacts so you can find and invite friends."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "5ead202a-8c50-4a4d-8077-d9c04a0418c0"
+      }
+    },
+    "owner": "hustler_ankur"
   }
 }
